@@ -3,7 +3,10 @@
 Just a route to view your pc info (mostly everything is well known to you 😜)
 
 # Usage
-- Clone the repo and run it
+- Copy the code, clone the repo and run `index.js` file
+ ```bash
+ $ git clone https://github.com/sachin-dahal/os_info
+ ```
 ### Response
 ```json
 {
