@@ -6,13 +6,11 @@ const publicIp = require('public-ip');
 router.get('/', async(req, res) => {
     var agent = req.headers['user-agent'];
     var ip = await publicIp.v4();
-    console.log(agent);
     var ipresult;
 
     var uptime = ((os.uptime().toFixed(0) / 60) / 60).toFixed(2);
     var model = os.cpus()[0].model;
     await deviceInfo.getDeviceInfo(agent, ip, (res) => {
-        console.log(res);
         ipresult = res;
     });
 
